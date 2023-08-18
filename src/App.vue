@@ -1,26 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <LoginPage /> <!-- เรียกใช้คอมโพเนนต์ LoginPage.vue -->
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LoginPage from '@/views/LoginPage.vue'; // ให้แน่ใจว่าเส้นทางถูกต้อง
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    LoginPage
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+/* เพิ่มสไตล์ที่ต้องการสำหรับหน้า App.vue */
 </style>
