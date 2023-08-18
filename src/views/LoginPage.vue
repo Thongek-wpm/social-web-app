@@ -16,24 +16,30 @@
           </div>
         </div>
         <form @submit.prevent="login">
-          <div class="form-group flex items-center">
-            <label for="username" class="mr- 4">Username:</label>
+          <div class="form-group flex items-center justify-center mb-4">
+            <!-- จัดกึ่งกลางแนวตั้งและแนวนอน -->
+            <label for="username" class="mr-4">Username:</label>
+            <br />
+            <!-- บรรทัดใหม่ -->
             <input
               type="text"
               id="username"
               v-model="username"
               required
-              class="w-full"
+              class="w-full txt-form"
             />
           </div>
-          <div class="form-group flex items-center">
-            <label for="password" class="mr- 4">Password:</label>
+          <div class="form-group flex items-center justify-center mb-4">
+            <!-- จัดกึ่งกลางแนวตั้งและแนวนอน -->
+            <label for="password" class="mr-4">Password:</label>
+            <br />
+            <!-- บรรทัดใหม่ -->
             <input
               type="password"
               id="password"
               v-model="password"
               required
-              class="w-full"
+              class="w-full txt-form"
             />
           </div>
           <div class="form-group remember-me">
@@ -139,10 +145,7 @@ export default {
 }
 
 .form-group {
-  margin-bottom: 20px;
-  width: 100%;
-  height: 100%;
-  align-items: center;
+  margin-bottom: 5px;
 }
 
 .mr-2 {
@@ -175,12 +178,12 @@ button {
 }
 
 .right-image {
-  width: 1200px;
+  width: 1600px;
   border-radius: 30px;
   right: 50;
-  left: 50;
+  left: 60;
   height: 800px;
-  padding-left: 50px;
+  padding-left: 10px;
   object-fit: cover;
 }
 
@@ -212,5 +215,9 @@ button {
 }
 .btn-login:hover {
   opacity: 1;
+}
+.txt-form {
+  width: 300px;
+  padding-bottom: 3%;
 }
 </style>
