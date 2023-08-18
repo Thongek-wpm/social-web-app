@@ -17,7 +17,7 @@
         </div>
         <form @submit.prevent="login">
           <div class="form-group flex items-center">
-            <label for="username" class="mr-2">Username:</label>
+            <label for="username" class="mr- 4">Username:</label>
             <input
               type="text"
               id="username"
@@ -27,7 +27,7 @@
             />
           </div>
           <div class="form-group flex items-center">
-            <label for="password" class="mr-2">Password:</label>
+            <label for="password" class="mr- 4">Password:</label>
             <input
               type="password"
               id="password"
@@ -40,9 +40,11 @@
             <input type="checkbox" id="rememberMe" v-model="rememberMe" />
             <label for="rememberMe">Remember Me</label>
           </div>
-          <button class="btn-login" type="submit">
-            <strong>Log-in</strong>
-          </button>
+          <div class="text-center mt-3">
+            <button class="btn-login" type="submit">
+              <strong>LOGIN</strong>
+            </button>
+          </div>
         </form>
         <div class="text-center mt-3">
           <p>
@@ -57,7 +59,7 @@
     </div>
     <footer class="footer">
       <p>&copy; 2023 Blog Diary. All rights reserved.</p>
-      <p1>Next Warehouse Studio.</p1>
+      <p>Next Warehouse Studio.</p>
     </footer>
   </div>
 </template>
@@ -137,8 +139,7 @@ export default {
 }
 
 .form-group {
-  margin-bottom: 10px;
-  display: flex;
+  margin-bottom: 20px;
   width: 100%;
   height: 100%;
   align-items: center;
@@ -207,6 +208,7 @@ button {
   width: 50%;
   cursor: pointer;
   font-family: "Pacifico", sans-serif; /* เปลี่ยน 'Your Font' เป็นชื่อฟอนต์ที่คุณต้องการใช้ */
+  font-size: 14px;
 }
 .btn-login:hover {
   opacity: 1;
