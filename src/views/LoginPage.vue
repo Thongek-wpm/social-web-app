@@ -27,6 +27,7 @@
               v-model="username"
               required
               class="w-full txt-form"
+              placeholder="Username"
             />
           </div>
           <div class="form-group flex items-center justify-center mb-4">
@@ -40,6 +41,7 @@
               v-model="password"
               required
               class="w-full txt-form"
+              placeholder="Password"
             />
           </div>
           <div class="form-group remember-me">
@@ -120,6 +122,7 @@ export default {
   align-items: center;
   margin-left: 50px;
   margin-right: 50px;
+  margin-top: 50px;
 }
 
 .content-container {
@@ -148,8 +151,8 @@ export default {
   margin-bottom: 5px;
 }
 
-.mr-2 {
-  margin-right: 10px;
+.mr-4 {
+  margin-right: 20px;
   left: 100%;
   right: 100%;
 }
@@ -217,7 +220,6 @@ button {
   opacity: 1;
 }
 .txt-form {
-  width: 300px;
-  padding-bottom: 3%;
+  width: 290px;
 }
 </style>
