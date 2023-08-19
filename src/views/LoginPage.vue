@@ -49,14 +49,14 @@
             <label for="rememberMe">Remember Me</label>
           </div>
           <div class="text-center mt-3">
-            <button class="btn-login" type="submit">
-              <strong>LOGIN</strong>
+            <button class="btn-register" @click="goToRegisterPage">
+              <strong>Click Here</strong>
             </button>
           </div>
         </form>
         <div class="text-center row">
           <p>Don't have an account?</p>
-          <button class="btn-register" type="submit">
+          <button class="btn-register" @click="goToRegisterPage">
             <strong>Click Here</strong>
           </button>
         </div>
@@ -71,7 +71,7 @@
 import Footer from "@/components/FooterItem.vue"; // ระบุ path ที่ถูกต้อง
 import ItemBanner from "@/components/ItemRightImg.vue";
 import NavigationBar from "@/components/NavigationGusst.vue"; // ระบุ path ที่ถูกต้อง
-
+import { useRouter } from "vue-router"; // Import Vue Router
 export default {
   components: {
     Footer,
@@ -104,7 +104,12 @@ export default {
         alert("login failed");
       }
     },
+    goToRegisterPage() {
+      const router = useRouter(); // Get the router instance
+      router.push("/register"); // Use the router instance to navigate
+    },
   },
+
   created() {
     // ถ้ามีข้อมูลเข้าสู่ระบบที่จำไว้
     const rememberedUser = localStorage.getItem("rememberedUser");

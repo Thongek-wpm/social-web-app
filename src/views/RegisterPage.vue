@@ -1,19 +1,14 @@
 <template>
-    <div>
-      <!-- ... ส่วนอื่น ๆ ... -->
-      <router-link to="/register" class="text-blue-500"
-        ><strong>Click here</strong></router-link
-      >
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    // ... อื่น ๆ ...
-  };
-  </script>
-  
-  <style>
-  /* ... สไตล์ ... */
-  </style>
-  
+  <div>
+    <h1>Register Page</h1>
+    <!-- รายละเอียดหน้าลงที่นี่ -->
+  </div>
+</template>
+
+<script>
+// ... ส่วนอื่น ๆ ของโค้ด ...
+</script>
+
+<style>
+/* ... ส่วนอื่น ๆ ของ CSS ... */
+</style>
