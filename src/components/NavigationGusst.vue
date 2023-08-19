@@ -7,14 +7,12 @@
     </div>
     <ul class="nav">
       <li class="nav-item">
-        <router-link to="/" class="nav-link">Home</router-link>
+        <router-link to="/" class="nav-link">Login</router-link>
       </li>
+      
       <li class="nav-item">
-        <router-link to="/features" class="nav-link">Features</router-link>
+        <router-link to="/Register" class="nav-link">Register</router-link>
       </li>
-      <li class="nav-item">
-        <router-link to="/pricing" class="nav-link">Pricing</router-link>
-        </li>
     </ul>
   </nav>
 </template>
