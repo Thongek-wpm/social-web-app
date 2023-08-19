@@ -10,8 +10,7 @@
             <p>
               Welcome to <strong>"Blog Diary"</strong> for yourself everyday.
               <strong
-                ><br />The first step is to log in before accessing the
-                service.</strong
+                ><br />The first step is to log in before accessing the service.</strong
               >
             </p>
           </div>
@@ -62,7 +61,7 @@
           </button>
         </div>
       </div>
-      <img src="@/assets/artsy.jpg" alt="artsy" class="right-image" />
+      <ItemBanner />
     </div>
     <Footer />
   </div>
@@ -70,12 +69,14 @@
 
 <script>
 import Footer from "@/components/FooterItem.vue"; // ระบุ path ที่ถูกต้อง
+import ItemBanner from "@/components/ItemRightImg.vue";
 import NavigationBar from "@/components/NavigationGusst.vue"; // ระบุ path ที่ถูกต้อง
 
 export default {
   components: {
     Footer,
     NavigationBar,
+    ItemBanner,
   },
   data() {
     return {
@@ -87,10 +88,7 @@ export default {
   methods: {
     login() {
       // ตรวจสอบรายละเอียดการเข้าสู่ระบบ และทำการเรียก API สำหรับการตรวจสอบ
-      if (
-        this.username === "your_username" &&
-        this.password === "your_password"
-      ) {
+      if (this.username === "your_username" && this.password === "your_password") {
         // ส่งผู้ใช้ไปยังหน้าหลังเข้าสู่ระบบ
         this.$router.push("/dashboard");
 
@@ -181,16 +179,6 @@ button {
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.right-image {
-  width: 1600px;
-  border-radius: 30px;
-  right: 50;
-  left: 60;
-  height: 800px;
-  padding-left: 10px;
-  object-fit: cover;
 }
 
 .subtle-heading {

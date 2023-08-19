@@ -9,7 +9,7 @@
       <li class="nav-item">
         <router-link to="/" class="nav-link">Login</router-link>
       </li>
-      
+
       <li class="nav-item">
         <router-link to="/Register" class="nav-link">Register</router-link>
       </li>
