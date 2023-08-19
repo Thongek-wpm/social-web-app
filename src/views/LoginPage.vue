@@ -101,7 +101,7 @@ export default {
           localStorage.removeItem("rememberedUser");
         }
       } else {
-        alert("เข้าสู่ระบบล้มเหลว");
+        alert("login failed");
       }
     },
   },

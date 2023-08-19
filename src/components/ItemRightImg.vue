@@ -1,5 +1,14 @@
 <template>
-  <img src="@/assets/artsy.jpg" alt="artsy" class="right-image" />
+  <div class="image-container">
+    <img src="@/assets/artsy.jpg" alt="artsy" class="right-image" />
+    <div class="image-text">
+      <h4>Blog Diary</h4>
+      <p>
+        Welcome to "Blog Diary" for yourself everyday. You can write notes every day and
+        share them with others, You share your feel eveydays for social network.<br />
+      </p>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -17,5 +26,19 @@ export default {
   height: 800px;
   padding-left: 10px;
   object-fit: cover;
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-text {
+  position: absolute;
+  bottom: 0; /* จัดตำแหน่งให้อยู่ด้านล่าง */
+  left: 0; /* จัดตำแหน่งให้อยู่ด้านซ้าย */
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #fff;
 }
 </style>
