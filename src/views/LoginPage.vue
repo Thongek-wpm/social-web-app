@@ -1,5 +1,6 @@
 <template>
   <div>
+    <NavigationBar />
     <div class="flex-container">
       <div class="content-container">
         <div class="text-center mb-4 logo-container">
@@ -65,15 +66,19 @@
       </div>
       <img src="@/assets/artsy.jpg" alt="artsy" class="right-image" />
     </div>
-    <footer class="footer">
-      <p>&copy; 2023 Blog Diary. All rights reserved.</p>
-      <p>Next Warehouse Studio.</p>
-    </footer>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from "@/components/FooterItem.vue"; // ระบุ path ที่ถูกต้อง
+import NavigationBar from "@/components/NavigationGusst.vue"; // ระบุ path ที่ถูกต้อง
+
 export default {
+  components: {
+    Footer,
+    NavigationBar,
+  },
   data() {
     return {
       username: "",
@@ -194,11 +199,6 @@ button {
   color: #999; /* เปลี่ยนสีข้อความให้เป็นสีเทาอ่อนหรือสีที่คุณต้องการ */
 }
 
-.footer {
-  text-align: center;
-  padding: 20px;
-}
-
 .btn-login {
   background-color: #007bff;
   border: none;
@@ -213,7 +213,7 @@ button {
   height: 50%;
   width: 50%;
   cursor: pointer;
-  font-family: "Pacifico", sans-serif; /* เปลี่ยน 'Your Font' เป็นชื่อฟอนต์ที่คุณต้องการใช้ */
+  font-family: sans-serif; /* เปลี่ยน 'Your Font' เป็นชื่อฟอนต์ที่คุณต้องการใช้ */
   font-size: 14px;
 }
 .btn-login:hover {
