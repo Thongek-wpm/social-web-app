@@ -55,11 +55,13 @@
             </button>
           </div>
         </form>
-        <div class="text-center row">
-          <p>Don't have an account?</p>
-          <button class="btn-register" @click="goToRegisterPage">
-            <strong>Click Here</strong>
-          </button>
+        <div class="text-center">
+          <p>
+            Don't have an account?
+            <router-link to="/Register" class="nav-link"
+              ><p class="p1">Click Here</p></router-link
+            >
+          </p>
         </div>
       </div>
       <ItemBanner />
@@ -219,12 +221,21 @@ button {
 .btn-register {
   background-color: transparent;
   color: #000;
-  text-align: center;
   opacity: 0.6;
-  display: inline-block;
-  height: 5%;
-  width: 50%;
   font-family: sans-serif; /* เปลี่ยน 'Your Font' เป็นชื่อฟอนต์ที่คุณต้องการใช้ */
-  font-size: 14px;
+}
+.nav-link svg {
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+}
+.nav-link:hover {
+  color: #007bff;
+}
+.nav-link {
+  margin-left: 2%;
+  text-decoration: none;
+  color: #000;
+  transition: color 0.3s;
 }
 </style>
