@@ -4,8 +4,9 @@
     <div class="image-text">
       <h4>Blog Diary</h4>
       <p>
-        Welcome to "Blog Diary" for yourself everyday. You can write notes every day and
+        Welcome to BLOG DIARY for yourself everyday. You can write notes every day and
         share them with others, You share your feel eveydays for social network.<br />
+        Other get experience and feel.
       </p>
     </div>
   </div>
@@ -39,6 +40,6 @@ export default {
   padding: 20px;
   border-radius: 10px;
   font-size: 18px;
-  color: #fff;
+  color: #f2f3f4;
 }
 </style>
