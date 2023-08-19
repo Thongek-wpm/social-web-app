@@ -10,7 +10,8 @@
             <p>
               Welcome to <strong>"Blog Diary"</strong> for yourself everyday.
               <strong
-                ><br />The first step is to log in before accessing the service.</strong
+                ><br />The first step is to log in before accessing the
+                service.</strong
               >
             </p>
           </div>
@@ -49,8 +50,8 @@
             <label for="rememberMe">Remember Me</label>
           </div>
           <div class="text-center mt-3">
-            <button class="btn-register" @click="goToRegisterPage">
-              <strong>Click Here</strong>
+            <button class="btn-login" @click="login">
+              <strong>Login</strong>
             </button>
           </div>
         </form>
@@ -71,7 +72,7 @@
 import Footer from "@/components/FooterItem.vue"; // ระบุ path ที่ถูกต้อง
 import ItemBanner from "@/components/ItemRightImg.vue";
 import NavigationBar from "@/components/NavigationGusst.vue"; // ระบุ path ที่ถูกต้อง
-import { useRouter } from "vue-router"; // Import Vue Router
+import "@/assets/style/global.css";
 export default {
   components: {
     Footer,
@@ -88,7 +89,10 @@ export default {
   methods: {
     login() {
       // ตรวจสอบรายละเอียดการเข้าสู่ระบบ และทำการเรียก API สำหรับการตรวจสอบ
-      if (this.username === "your_username" && this.password === "your_password") {
+      if (
+        this.username === "your_username" &&
+        this.password === "your_password"
+      ) {
         // ส่งผู้ใช้ไปยังหน้าหลังเข้าสู่ระบบ
         this.$router.push("/dashboard");
 
@@ -105,8 +109,7 @@ export default {
       }
     },
     goToRegisterPage() {
-      const router = useRouter(); // Get the router instance
-      router.push("/register"); // Use the router instance to navigate
+      this.$router.push("/register");
     },
   },
 
