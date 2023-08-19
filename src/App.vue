@@ -1,17 +1,17 @@
 <template>
   <div id="app">
-    <LoginPage /> <!-- เรียกใช้คอมโพเนนต์ LoginPage.vue -->
+    <LoginPage/> <!-- เรียกใช้คอมโพเนนต์ LoginPage.vue -->
   </div>
 </template>
 
 <script>
-import LoginPage from '@/views/LoginPage.vue'; // ให้แน่ใจว่าเส้นทางถูกต้อง
+import LoginPage from './views/LoginPage.vue';
 
 export default {
   name: 'App',
   components: {
-    LoginPage
-  }
+    LoginPage,
+}
 }
 </script>
 

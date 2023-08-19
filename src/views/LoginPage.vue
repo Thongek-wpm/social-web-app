@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="Login">
     <NavigationBar />
     <div class="flex-container">
       <div class="content-container">
@@ -233,7 +233,6 @@ button {
   color: #007bff;
 }
 .nav-link {
-
   text-decoration: none;
   color: #000;
   transition: color 0.3s;
