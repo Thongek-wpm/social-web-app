@@ -233,7 +233,7 @@ button {
   color: #007bff;
 }
 .nav-link {
-  margin-left: 2%;
+
   text-decoration: none;
   color: #000;
   transition: color 0.3s;
