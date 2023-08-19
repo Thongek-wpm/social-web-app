@@ -55,13 +55,11 @@
             </button>
           </div>
         </form>
-        <div class="text-center mt-3">
-          <p>
-            Don't have an account?
-            <router-link to="/register" class="text-blue-500"
-              ><strong>Click here</strong></router-link
-            >
-          </p>
+        <div class="text-center row">
+          <p>Don't have an account?</p>
+          <button class="btn-register" type="submit">
+            <strong>Click Here</strong>
+          </button>
         </div>
       </div>
       <img src="@/assets/artsy.jpg" alt="artsy" class="right-image" />
@@ -221,5 +219,16 @@ button {
 }
 .txt-form {
   width: 290px;
+}
+.btn-register {
+  background-color: transparent;
+  color: #000;
+  text-align: center;
+  opacity: 0.6;
+  display: inline-block;
+  height: 1%;
+  width: 30%;
+  font-family: sans-serif; /* เปลี่ยน 'Your Font' เป็นชื่อฟอนต์ที่คุณต้องการใช้ */
+  font-size: 14px;
 }
 </style>
