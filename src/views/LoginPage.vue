@@ -214,8 +214,8 @@ button {
   text-align: center;
   opacity: 0.6;
   display: inline-block;
-  height: 1%;
-  width: 30%;
+  height: 5%;
+  width: 50%;
   font-family: sans-serif; /* เปลี่ยน 'Your Font' เป็นชื่อฟอนต์ที่คุณต้องการใช้ */
   font-size: 14px;
 }
