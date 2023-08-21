@@ -1,20 +1,18 @@
-import { createRouter, createWebHistory } from "vue-router";
+// src/router/index.js
+import RegisterPageVue from '@/views/RegisterPage.vue';
+import { createRouter, createWebHistory } from 'vue-router'; // ตรวจสอบให้แน่ใจว่าคุณนำเข้า createRouter และ createWebHistory มาอย่างถูกต้อง
+
 const routes = [
   {
-    path: "/",
-    name: "Login",
-    component: () => import("@/views/LoginPage.vue"),
+    path: '/Register',
+    component: RegisterPageVue,
   },
-  {
-    path: "/register",
-    name: "register",
-    component: () => import("@/views/RegisterPage.vue"),
-  },
+  // ... กำหนดเส้นทางอื่น ๆ ต่อจากนี้
 ];
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
-  routes,
+  history: createWebHistory(),
+  routes
 });
 
 export default router;
