@@ -1,11 +1,11 @@
 // src/router/index.js
-import RegisterPageVue from '@/views/RegisterPage.vue';
+import Register from '@/views/RegisterPage.vue';
 import { createRouter, createWebHistory } from 'vue-router'; // ตรวจสอบให้แน่ใจว่าคุณนำเข้า createRouter และ createWebHistory มาอย่างถูกต้อง
 
 const routes = [
   {
     path: '/Register',
-    component: RegisterPageVue,
+    component: Register,
   },
   // ... กำหนดเส้นทางอื่น ๆ ต่อจากนี้
 ];

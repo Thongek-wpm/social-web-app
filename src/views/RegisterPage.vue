@@ -1,5 +1,5 @@
 <template>
-  <div class="RegisterPageVue">
+  <div id="Register">
     <NavigationBar />
     <div class="flex-container">
       <div class="content-container">

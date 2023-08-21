@@ -1,5 +1,5 @@
 <template>
-  <div class="Login">
+  <div id="Login">
     <NavigationBar />
     <div class="flex-container">
       <div class="content-container">
@@ -109,9 +109,6 @@ export default {
       } else {
         alert("login failed");
       }
-    },
-    goToRegisterPage() {
-      this.$router.push("/register");
     },
   },
 
