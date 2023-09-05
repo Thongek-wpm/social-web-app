@@ -5,7 +5,7 @@
       <div class="content-container">
         <div class="text-center mb-4 logo-container">
           <img src="@/assets/diary.png" alt="diary" class="logo" />
-          <h2 class="subtle-heading">Blog Diary</h2>
+          <h2 class="subtle-heading">BLOG DIARY</h2>
           <div class="mb-4">
             <p>
               Welcome to <strong>"Blog Diary"</strong> for yourself everyday.
@@ -21,7 +21,6 @@
             <!-- จัดกึ่งกลางแนวตั้งและแนวนอน -->
             <label for="username" class="mr-4">Username:</label>
             <br />
-            <!-- บรรทัดใหม่ -->
             <input
               type="text"
               id="username"
