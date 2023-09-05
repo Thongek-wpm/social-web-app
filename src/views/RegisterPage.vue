@@ -6,33 +6,33 @@
         <div class="text-center mb-4 logo-container">
           <img src="@/assets/diary.png" alt="diary" class="logo" />
           <h1 class="register-heading">Register</h1>
-          <br>
-            If you do not have an account, <br/>you should create a blogdiary account
-            before accessing.
+          <br />
+          If you do not have an account, <br />you should create a blogdiary
+          account before accessing.
         </div>
         <form @submit.prevent="register">
-        <div class="form-group">
-          <label for="fullname">firstname & Lastname</label>
-          <input type="text" id="fullname" v-model="fullname" required />
-        </div>
-        <div class="form-group">
-          <label for="username">Username:</label>
-          <input type="text" id="username" v-model="username" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input type="email" id="email" v-model="email" required />
-        </div>
-        <div class="form-group">
-          <label for="birthdate">Birthdate:</label>
-          <input type="date" id="birthdate" v-model="birthdate" required />
-        </div>
-        <div class="form-group">
-          <label for="password">Password:</label>
-          <input type="password" id="password" v-model="password" required />
-        </div>
-        <button class="register-button" type="submit">Register</button>
-      </form>
+          <div class="form-group">
+            <label for="fullname">firstname & Lastname</label>
+            <input type="text" id="fullname" v-model="fullname" required />
+          </div>
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" v-model="username" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" v-model="email" required />
+          </div>
+          <div class="form-group">
+            <label for="birthdate">Birthdate:</label>
+            <input type="date" id="birthdate" v-model="birthdate" required />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" v-model="password" required />
+          </div>
+          <button class="register-button" type="submit">Register</button>
+        </form>
         <div class="text-center"></div>
       </div>
       <ItemBanner />

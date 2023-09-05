@@ -58,7 +58,7 @@
         <div class="text-center">
           <p>
             Don't have an account?
-            <router-link to="/Register" class="nav-link"
+            <router-link to="register" class="nav-link"
               ><p class="p1">Click Here</p></router-link
             >
           </p>
