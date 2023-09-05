@@ -57,9 +57,9 @@
         <div class="text-center">
           <p>
             Don't have an account?
-            <router-link to="register" class="nav-link"
-              ><p class="p1">Click Here</p></router-link
-            >
+            <button class="btn-register" @click="goToRegisterPage">
+              Click Here
+            </button>
           </p>
         </div>
       </div>
@@ -108,6 +108,10 @@ export default {
       } else {
         alert("login failed");
       }
+    },
+
+    goToRegisterPage() {
+      this.$router.push({ name: "Register" }); // ไปยังหน้า Register
     },
   },
 
@@ -170,6 +174,10 @@ export default {
 
 input[type="checkbox"] {
   margin-right: 5px;
+}
+btn-register {
+  background-color: transparent;
+  color: #000;
 }
 
 button {
