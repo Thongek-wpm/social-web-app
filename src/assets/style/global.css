@@ -1,18 +1,23 @@
 body {
-    font-family: 'Pacifico', cursive; /* เรียกใช้ฟอนต์ Pacifico */
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: bold;
-  }
-  
-  p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  .p1{
-    font-size:13px;
-  }
-  
-  /* เพิ่มสไตล์ตัวอักษรอื่น ๆ ตามที่คุณต้องการ */
-  
+  font-family: "Pacifico", cursive; /* เรียกใช้ฟอนต์ Pacifico */
+  background-color: #f2f3f4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.p1 {
+  font-size: 13px;
+}
+
+/* เพิ่มสไตล์ตัวอักษรอื่น ๆ ตามที่คุณต้องการ */

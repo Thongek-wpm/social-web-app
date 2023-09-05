@@ -10,8 +10,7 @@
             <p>
               Welcome to <strong>"Blog Diary"</strong> for yourself everyday.
               <strong
-                ><br />The first step is to log in before accessing the
-                service.</strong
+                ><br />The first step is to log in before accessing the service.</strong
               >
             </p>
           </div>
@@ -57,9 +56,7 @@
         <div class="text-center">
           <p>
             Don't have an account?
-            <button class="btn-register" @click="goToRegisterPage">
-              Click Here
-            </button>
+            <button class="btn-register" @click="goToRegisterPage">Click Here</button>
           </p>
         </div>
       </div>
@@ -90,10 +87,7 @@ export default {
   methods: {
     login() {
       // ตรวจสอบรายละเอียดการเข้าสู่ระบบ และทำการเรียก API สำหรับการตรวจสอบ
-      if (
-        this.username === "your_username" &&
-        this.password === "your_password"
-      ) {
+      if (this.username === "your_username" && this.password === "your_password") {
         // ส่งผู้ใช้ไปยังหน้าหลังเข้าสู่ระบบ
         this.$router.push("/dashboard");
 
@@ -140,7 +134,6 @@ export default {
   max-width: 400px;
   padding: 20px;
   height: 750px;
-  border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -178,6 +171,8 @@ input[type="checkbox"] {
 btn-register {
   background-color: transparent;
   color: #000;
+  height: 50%;
+  width: 50%;
 }
 
 button {
