@@ -10,7 +10,8 @@
             <p>
               Welcome to <strong>"Blog Diary"</strong> for yourself everyday.
               <strong
-                ><br />The first step is to log in before accessing the service.</strong
+                ><br />The first step is to log in before accessing the
+                service.</strong
               >
             </p>
           </div>
@@ -56,7 +57,9 @@
         <div class="text-center">
           <p>
             Don't have an account?
-            <button class="btn-register" @click="goToRegisterPage">Click Here</button>
+            <router-link to="/register" class="nav-link"
+              >Click Here</router-link
+            >
           </p>
         </div>
       </div>
@@ -87,7 +90,10 @@ export default {
   methods: {
     login() {
       // ตรวจสอบรายละเอียดการเข้าสู่ระบบ และทำการเรียก API สำหรับการตรวจสอบ
-      if (this.username === "your_username" && this.password === "your_password") {
+      if (
+        this.username === "your_username" &&
+        this.password === "your_password"
+      ) {
         // ส่งผู้ใช้ไปยังหน้าหลังเข้าสู่ระบบ
         this.$router.push("/dashboard");
 
