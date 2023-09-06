@@ -1,5 +1,5 @@
 <template>
-  <div id="Register">
+  <div id="RegisterPage">
     <NavigationBar />
     <div class="flex-container">
       <div class="content-container">
@@ -7,8 +7,8 @@
           <img src="@/assets/diary.png" alt="diary" class="logo" />
           <h1 class="register-heading">Register</h1>
           <br />
-          If you do not have an account, <br />you should create a blogdiary
-          account before accessing.
+          <strong>If you do not have an account,</strong><br />you should create
+          a blogdiary account before accessing.
         </div>
         <form @submit.prevent="register">
           <div class="form-group">

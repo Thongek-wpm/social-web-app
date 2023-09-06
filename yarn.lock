@@ -6285,6 +6285,11 @@ rimraf@^3.0.2:
   dependencies:
     glob "^7.1.3"
 
+roter@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/roter/-/roter-0.0.3.tgz#a00ca03b648b6e777942177fd42e8a25daede9d3"
+  integrity sha512-uf4cfzUopYpqxhRNe60UVi0IicwiAC2OLx/cq88w9yRBqCk+6vKHgLptjactsKs1cD+qM8R4TTZgPpAcYdB5fQ==
+
 run-parallel@^1.1.9:
   version "1.2.0"
   resolved "https://registry.npmmirror.com/run-parallel/-/run-parallel-1.2.0.tgz"

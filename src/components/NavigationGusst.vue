@@ -7,11 +7,11 @@
     </div>
     <ul class="nav">
       <li class="nav-item">
-        <router-link to="/" class="nav-link">Login</router-link>
+        <a class="nav-link" href="/">Login</a>
       </li>
 
       <li class="nav-item">
-        <router-link to="/Register" class="nav-link">Register</router-link>
+        <a class="nav-link" href="register">Register</a>
       </li>
     </ul>
   </nav>
