@@ -73,7 +73,7 @@
   padding-left: 1%;
 }
 .logo-button img {
-  height: 40px;
+  height: 50px;
   width: auto;
 }
 </style>
