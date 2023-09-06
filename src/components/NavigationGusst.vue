@@ -3,6 +3,7 @@
     <div class="logo-button">
       <button class="logo-button">
         <img src="@/assets/diary.png" alt="logo" />
+        <div class="nav-link">Blog Diray</div>
       </button>
     </div>
     <ul class="nav">
@@ -20,7 +21,7 @@
 <style scoped>
 /* สไตล์สำหรับ Navigation Bar */
 .navbar {
-  background-color: #f8f9fa;
+  background-color: #b4d6d8bb;
   padding: 10px 20px;
   border-bottom: 1px solid #ccc;
   display: flex;
@@ -69,6 +70,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+  padding-left: 1%;
 }
 .logo-button img {
   height: 40px;

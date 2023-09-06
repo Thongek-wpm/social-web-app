@@ -10,7 +10,8 @@
             <p>
               Welcome to <strong>"Blog Diary"</strong> for yourself everyday.
               <strong
-                ><br />The first step is to log in before accessing the service.</strong
+                ><br />The first step is to log in before accessing the
+                service.</strong
               >
             </p>
           </div>
@@ -87,7 +88,10 @@ export default {
   methods: {
     login() {
       // ตรวจสอบรายละเอียดการเข้าสู่ระบบ และทำการเรียก API สำหรับการตรวจสอบ
-      if (this.username === "your_username" && this.password === "your_password") {
+      if (
+        this.username === "your_username" &&
+        this.password === "your_password"
+      ) {
         // ส่งผู้ใช้ไปยังหน้าหลังเข้าสู่ระบบ
         this.$router.push("/dashboard");
 
@@ -132,6 +136,7 @@ export default {
 
 .content-container {
   max-width: 400px;
+  background-color: #d3e0e0;
   padding: 20px;
   height: 750px;
   border-radius: 5px;
